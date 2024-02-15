@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
         MouvementsJoueur();
     }
 
+    
+    
     private void MouvementsJoueur()
     {
         float positionX = Input.GetAxis("Horizontal");
