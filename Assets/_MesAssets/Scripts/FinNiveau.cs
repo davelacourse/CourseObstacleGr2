@@ -12,6 +12,6 @@ public class FinNiveau : MonoBehaviour
         Debug.Log("Temps total :" + Time.time + " secondes");
         Debug.Log("Nombre total de collisions : " + GameManager.Instance.Collisions);
         Debug.Log("Temps final : " + (Time.time + GameManager.Instance.Collisions) + " secondes.");
-        Destroy(_player);
+        Destroy(_player)
     }
 }
