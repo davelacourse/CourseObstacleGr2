@@ -17,7 +17,7 @@ public class GestionCollision : MonoBehaviour
      */
     private void OnCollisionEnter(Collision collision)
     {
-        if (!_touche)
+        if (!_touche && collision.gameObject.tag == "Player")
         {
             // Change la couleur du matériel lors de la la collision
             // GetComponent<MeshRenderer>().material.color = Color.red;
