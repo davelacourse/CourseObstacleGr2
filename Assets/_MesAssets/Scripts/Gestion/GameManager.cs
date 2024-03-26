@@ -5,6 +5,9 @@ public class GameManager : MonoBehaviour
     // Singleton
     public static GameManager Instance;
 
+    private float _tempsDepart = 0f;
+    public float TempsDepart => _tempsDepart;
+
     private void Awake()
     {
         if(Instance == null)
@@ -24,6 +27,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         _collisions = 0;
+        _tempsDepart = Time.time;
     }
 
     public void AugmenterCollision()
