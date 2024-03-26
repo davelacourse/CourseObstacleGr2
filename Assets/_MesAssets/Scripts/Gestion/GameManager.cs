@@ -28,11 +28,12 @@ public class GameManager : MonoBehaviour
     {
         _collisions = 0;
         _tempsDepart = Time.time;
+        
     }
 
     public void AugmenterCollision()
     {
         _collisions++;
-        Debug.Log("Nombre de collisions : " + _collisions.ToString());
+        UIManagerGame.Instance.ChangerCollisions(_collisions);
     }
 }

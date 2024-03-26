@@ -610,6 +610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _txtTemps: {fileID: 5234133179354008533}
+  _txtCollisions: {fileID: 3825785481708484008}
 --- !u!1 &6510246418894034501
 GameObject:
   m_ObjectHideFlags: 0
