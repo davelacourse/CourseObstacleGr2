@@ -11,9 +11,10 @@ public class UIFin : MonoBehaviour
 
     private void Start()
     {
-        _txtTempsTotal.text = "Temps total : " + (Time.time - GameManager.Instance.TempsDepart).ToString("f2") + " secondes";
+        _txtTempsTotal.text = "Temps total : " + (Time.time - GameManager.Instance.TempsDepart).ToString("f2") + " sec.";
         _txtCollisionsTotal.text = "Collisions totales : " + GameManager.Instance.Collisions.ToString();
-        _txtTempsFinal.text = "Temps final : " + ((Time.time - GameManager.Instance.TempsDepart) + GameManager.Instance.Collisions).ToString("f2") + " secondes.";
+        _txtTempsFinal.text = "Temps final : " + ((Time.time - GameManager.Instance.TempsDepart) 
+            + GameManager.Instance.Collisions).ToString("f2") + " sec.";
     }
 
 }
